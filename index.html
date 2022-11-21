@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Robot Builder</h1>
+        <img src="/resources/robot_head1.png" id="robotHead">
+        <img src="/resources/robot_body1.png" id="robotBody">
+        <img src="/resources/robot_leg1.png" id="robotLeg">
+<!--         my new -->
+        <img src="https://cdn-icons-png.flaticon.com/512/1294/1294036.png" id="weapon" />
+        <img src="/res/f224c695-0980-43af-b382-3e1caa07fe7b/robot-removebg-preview.png" id="companion" />
+        
+        <form>
+            <label>Head</label>
+            <select id="headSelect" onchange="changeHead()">
+                <option value="1">Head 1</option>
+                <option value="2">Head 2</option>
+                <option value="3">Head 3</option>
+                <option value="4">Head 4</option>
+                <option value="5">Head 5</option>
+                
+            </select>
+            
+            <label>Body</label>
+            <select id="bodySelect" onchange="changeBody()">
+                <option value="1">Body 1</option>
+                <option value="2">Body 2</option>
+                <option value="3">Body 3</option>
+                <option value="4">Body 4</option>
+            </select>
+
+            <label>Leg</label>
+            <select id="legSelect" onchange = "changeLeg()"   >
+                <option value="1">Leg 1</option>
+                <option value="2">Leg 2</option>
+                <option value="3">Leg 3</option>
+                <option value="4">Leg 4</option>
+            </select>
+            <label>Weapon</label>
+            <select id="weaponSelect" onchange = "changeWeapon(this)">
+                <option value="https://cdn-icons-png.flaticon.com/512/1294/1294036.png">Weapon 1</option>
+                <option value="https://cdn-icons-png.flaticon.com/512/1294/1294129.png">Weapon 2</option>
+                <option value="https://cdn-icons-png.flaticon.com/128/1482/1482027.png">Weapon 3</option>
+                <option value="https://cdn-icons-png.flaticon.com/128/1481/1481984.png">Weapon 4</option>
+            </select>
+             <label>Companion</label>
+            <select id="companionSelect" onchange = "changeCompanion(this)"   >
+                <option value="/res/f224c695-0980-43af-b382-3e1caa07fe7b/robot-removebg-preview.png">Companion 1</option>
+                <option value="https://o.remove.bg/downloads/1318b118-6511-4ec4-a793-a3e725c58970/robot__1_-removebg-preview.png">Companion 2</option>
+                <option value="https://o.remove.bg/downloads/96560989-6478-447a-adb0-b3a082a58771/robot__2_-removebg-preview.png">Companion 3</option>
+                <option value="https://o.remove.bg/downloads/b6db041a-4e38-4331-8a82-31e365a9c933/robotics__1_-removebg-preview.png">Companion 4</option>
+            </select>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
